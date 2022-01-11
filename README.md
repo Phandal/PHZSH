@@ -1,8 +1,8 @@
 # Zsh Configuration
 
-1. (Installation)[#installation]
-2. (Configuration)[#configuration]
-3. (Todo)[#todo]
+1. [Installation](#installation)
+2. [Configuration](#configuration)
+3. [Todo](#todo)
 
 This is a very minimal zsh configuration that does not use any
 frameworks or OH MY ZSH. Goals are on speed and usability.
@@ -11,22 +11,22 @@ frameworks or OH MY ZSH. Goals are on speed and usability.
 
 ## Installation
 
-To install simply clone this repo to your `XDG-CONFIG` location:
+To install simply clone this repo to your system:
 
 ```bash
-git clone https://gitlab.com/Phandal/zsh-config.git XDG-CONFIG/zsh
+git clone https://gitlab.com/Phandal/zsh-config.git ~/.config/zsh
 ```
 
 If you are on an X11 system add this line to your `.Xprofile`:
 
 ```bash
-export ZDOTDIR="$XDG-CONFIG/zsh"
+export ZDOTDIR=~/.config/zsh
 ```
 
 If you are on a system that does not use X11 use this:
 
 ```bash
-echo export ZDOTDIR="$XDG-CONFIG/zsh" >> ~/.zshenv
+echo export ZDOTDIR=~/.config/zsh >> ~/.zshenv
 ```
 
 ## Configuration
@@ -44,6 +44,12 @@ zsh_plug zsh-users/zsh-autosuggentions
 
 Don't forget to relaunch the terminal or source the .zshrc file to see the changes.
 
+**If the plugin repo uses a different naming scheme, the plugin script wont work.
+To fix this issue just look in the plugins folder and change the name of the file
+that end with .zsh to the same name as the containing folder with the .zsh file
+extension.**
+
 ## Todo
 1. Make the plugins reload on change.
 2. Fix a bug in the plugin script with file naming conventions.
+3. Add git status in the prompt.
