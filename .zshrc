@@ -14,6 +14,7 @@ PS1='%B%(?.%F{green}.%F{red})%(!.#.>)%f %F{cyan}%1~%f %F{green}${vcs_info_msg_0_
 # Sourcing
 source $ZDOTDIR/zsh_functions
 source $ZDOTDIR/zsh_aliases
+source $ZDOTDIR/zsh_exports
 
 if [ -f /data/data/com.termux/files/usr/share/fzf/key-bindings.zsh ]
 then
