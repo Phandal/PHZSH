@@ -1,13 +1,28 @@
-autoload -U compinit colors
+autoload -Uz compinit colors vcs_info
 compinit
 colors
 zstyle ':completion:*' menu select
+zstyle ':vcs_info:*' actionformats '%F{5}(%F{2}%b%F{3}|%F{1}%a%F{5})%f '
+zstyle ':vcs_info:*' formats '%F{5}(%F{2}%b%F{5})%f '                                                    zstyle ':vcs_info:(sv[nk]|bzr):*' branchformat '%b%F{1}:%F{3}%r'
+precmd () { vcs_info }
 
-PS1="%B%(?.%F{green}.%F{red})%(!.#.>)%f %F{cyan}%1~%f%b "
+bindkey -v
+
+setopt PROMPT_SUBST
+PS1='%B%(?.%F{green}.%F{red})%(!.#.>)%f %F{cyan}%1~%f %F{green}${vcs_info_msg_0_}%f%b '
 
 # Sourcing
 source $ZDOTDIR/zsh_functions
 source $ZDOTDIR/zsh_aliases
+
+if [ -f /data/data/com.termux/files/usr/share/fzf/key-bindings.zsh ]
+then
+  source /data/data/com.termux/files/usr/share/fzf/key-bindings.zsh
+  source /data/data/com.termux/files/usr/share/fzf/completion.zsh
+else
+  source /usr/share/doc/fzf/key-bindings.zsh
+  srouce /usr/share/doc/fzf/completions.zsh
+fi
 
 # Plugins
 zsh_plug zsh-users/zsh-autosuggestions

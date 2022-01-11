@@ -11,6 +11,9 @@ frameworks or OH MY ZSH. Goals are on speed and usability.
 
 ## Installation
 
+### Dependencies
+ 1. fzf
+
 To install simply clone this repo to your system:
 
 ```bash
@@ -44,12 +47,6 @@ zsh_plug zsh-users/zsh-autosuggentions
 
 Don't forget to relaunch the terminal or source the .zshrc file to see the changes.
 
-**If the plugin repo uses a different naming scheme, the plugin script wont work.
-To fix this issue just look in the plugins folder and change the name of the file
-that end with .zsh to the same name as the containing folder with the .zsh file
-extension.**
-
 ## Todo
 1. Make the plugins reload on change.
-2. Fix a bug in the plugin script with file naming conventions.
-3. Add git status in the prompt.
+3. Make the prompt look better
