@@ -12,7 +12,11 @@ if [ -f /data/data/com.termux/files/usr/share/fzf/key-bindings.zsh ]
 then
   source /data/data/com.termux/files/usr/share/fzf/key-bindings.zsh
   source /data/data/com.termux/files/usr/share/fzf/completion.zsh
-else
+elif [ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]
+then
   source /usr/share/doc/fzf/examples/key-bindings.zsh
   source /usr/share/doc/fzf/examples/completion.zsh
+else
+  source /usr/share/fzf/completion.zsh
+  source /usr/share/fzf/key-bindings.zsh
 fi
