@@ -1,2 +1,2 @@
-export EDITOR="emacs"
+export EDITOR="emacsclient -a "" -c"
 export PATH="$HOME/.local/bin:/usr/lib/node_modules:$HOME/.npm-global/bin:$PATH"
