@@ -16,6 +16,10 @@ elif [ -f /usr/share/doc/fzf/examples/key-bindings.zsh ]
 then
   source /usr/share/doc/fzf/examples/key-bindings.zsh
   source /usr/share/doc/fzf/examples/completion.zsh
+elif [ -d /opt/homebrew/Cellar/fzf ]
+then
+  source $(fd -i completion.zsh /opt/homebrew/Cellar/fzf/)
+  source $(fd -i key-bindings.zsh /opt/homebrew/Cellar/fzf/)
 else
   source /usr/share/fzf/completion.zsh
   source /usr/share/fzf/key-bindings.zsh
