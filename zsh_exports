@@ -1,2 +1,2 @@
-export EDITOR="emacs"
-export PATH="$HOME/.local/bin:/usr/lib/node_modules:$HOME/.npm-global/bin:$PATH"
+export EDITOR="nvim"
+export PATH="$HOME/.local/bin:/usr/lib/node_modules:$HOME/.npm-global/bin:$HOME/.luarocks/bin:$PATH"
