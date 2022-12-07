@@ -12,5 +12,3 @@ then
 else
   alias cat="bat"
 fi
-
-alias n="nvim"
