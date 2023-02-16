@@ -13,6 +13,10 @@ frameworks or OH MY ZSH. Goals are on speed and usability.
 
 ### Dependencies
  1. fzf
+ 2. bat
+ 3. ripgrep
+ 4. fd
+ 5. exa
 
 To install simply clone this repo to your system:
 
