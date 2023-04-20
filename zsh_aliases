@@ -5,6 +5,8 @@ alias cp="cp -i"
 alias rm="rm -i"
 alias mv="mv -i"
 
+alias gc="git checkout \$(git branch -a | fzf)"
+
 if ! command -v bat &> /dev/null
 then
   alias cat="batcat"
