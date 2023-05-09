@@ -5,7 +5,12 @@ alias cp="cp -i"
 alias rm="rm -i"
 alias mv="mv -i"
 
+alias ga="git add"
+alias gs="git status"
 alias gc="git checkout \$(git branch -a | fzf)"
+alias gcm="git commit"
+alias gd="git diff"
+alias gdt="git difftool"
 
 if ! command -v bat &> /dev/null
 then
