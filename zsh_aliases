@@ -12,6 +12,7 @@ alias gc="git checkout \$(git branch -a | fzf)"
 alias gcm="git commit"
 alias gd="git diff"
 alias gdt="git difftool"
+alias gl="git log --oneline"
 
 if ! command -v bat &> /dev/null
 then
