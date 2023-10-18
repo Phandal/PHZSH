@@ -24,3 +24,6 @@ else
   source /usr/share/fzf/completion.zsh
   source /usr/share/fzf/key-bindings.zsh
 fi
+
+# opam configuration
+[[ ! -r /home/work/.opam/opam-init/init.zsh ]] || source /home/work/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
