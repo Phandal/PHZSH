@@ -26,4 +26,4 @@ else
 fi
 
 # opam configuration
-[[ ! -r /home/work/.opam/opam-init/init.zsh ]] || source /home/work/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
+[[ ! -r ~/.opam/opam-init/init.zsh ]] || source ~/.opam/opam-init/init.zsh  > /dev/null 2> /dev/null
