@@ -5,6 +5,7 @@ alias grep="grep --color=auto"
 alias cp="cp -i"
 alias rm="rm -i"
 alias mv="mv -i"
+alias n="nvim"
 
 alias ga="git add"
 alias gs="git status"
