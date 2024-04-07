@@ -1,10 +1,10 @@
 export EDITOR="vim"
 export PATH="$HOME/go/bin:$HOME/.local/bin:/usr/lib/node_modules:$HOME/.npm-global/bin:$HOME/.luarocks/bin:$HOME/.cargo/bin:$PATH"
-# export BAT_THEME='Nord'
-export BAT_THEME='gruvbox-dark'
+# export BAT_THEME='gruvbox-dark'
+export BAT_THEME="GitHub"
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
-export FZF_DEFAULT_OPTS=' --color=fg:#ebdbb2,bg:#282828,hl:#fabd2f,fg+:#ebdbb2,bg+:#3c3836,hl+:#fabd2f,info:#83a598,prompt:#bdae93,spinner:#fabd2f,pointer:#83a598,marker:#fe8019,header:#665c54'
-# export FZF_DEFAULT_OPTS=' --color=fg:#e5e9f0,bg:-1,hl:#81a1c1,fg+:#e5e9f0,bg+:#3b4252,hl+:#81a1c1,info:#eacb8a,prompt:#bf6069,pointer:#b48dac,marker:#a3be8b,spinner:#b48dac,header:#a3be8b'
+# export FZF_DEFAULT_OPTS=' --color=fg:#ebdbb2,bg:#282828,hl:#fabd2f,fg+:#ebdbb2,bg+:#3c3836,hl+:#fabd2f,info:#83a598,prompt:#bdae93,spinner:#fabd2f,pointer:#83a598,marker:#fe8019,header:#665c54'
+export FZF_DEFAULT_OPTS=' --color=fg:#f0f3f6,bg:#0a0c10,hl:#71b7ff --color=fg+:#d9dee3,bg+:#7a828e,hl+:#92cbff --color=info:#26cd4d,prompt:#ff9492,pointer:#cb9eff --color=marker:#4ae168,spinner:#ffb1af,header:#f0b72f'
 
 osname=$(uname -s)
 user=$(whoami)
@@ -17,4 +17,3 @@ then
     export JAVA_HOME=$(/usr/libexec/java_home)
   fi
 fi
-# export FZF_DEFAULT_OPTS='--preview="bat --style=numbers --color=always {} | head -500" --color=fg:#e5e9f0,bg:#3b4252,hl:#81a1c1 --color=fg+:#e5e9f0,bg+:#3b4252,hl+:#81a1c1 --color=info:#eacb8a,prompt:#bf6069,pointer:#b48dac --color=marker:#a3be8b,spinner:#b48dac,header:#a3be8b'
