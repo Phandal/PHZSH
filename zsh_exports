@@ -1,6 +1,7 @@
 export EDITOR="vim"
 export PATH="$HOME/go/bin:$HOME/.local/bin:/usr/lib/node_modules:$HOME/.npm-global/bin:$HOME/.luarocks/bin:$HOME/.cargo/bin:$PATH"
 export BAT_THEME='gruvbox-dark'
+# export BAT_THEME="default"
 export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow --glob "!.git/*"'
 export FZF_DEFAULT_OPTS=' --color=fg:#ebdbb2,bg:#282828,hl:#fabd2f,fg+:#ebdbb2,bg+:#3c3836,hl+:#fabd2f,info:#83a598,prompt:#bdae93,spinner:#fabd2f,pointer:#83a598,marker:#fe8019,header:#665c54'
 # export FZF_DEFAULT_OPTS=' --color=fg:#f0f3f6,bg:#0a0c10,hl:#71b7ff --color=fg+:#d9dee3,bg+:#7a828e,hl+:#92cbff --color=info:#26cd4d,prompt:#ff9492,pointer:#cb9eff --color=marker:#4ae168,spinner:#ffb1af,header:#f0b72f'
