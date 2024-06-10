@@ -24,3 +24,7 @@ then
     export JAVA_HOME=$(/usr/libexec/java_home)
   fi
 fi
+
+# Salesforce
+SF_AC_ZSH_SETUP_PATH="$HOME/Library/Caches/sf/autocomplete/zsh_setup" && test -f $SF_AC_ZSH_SETUP_PATH && source $SF_AC_ZSH_SETUP_PATH;
+
