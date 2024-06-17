@@ -26,5 +26,11 @@ then
 fi
 
 # Salesforce
-SF_AC_ZSH_SETUP_PATH="$HOME/Library/Caches/sf/autocomplete/zsh_setup" && test -f $SF_AC_ZSH_SETUP_PATH && source $SF_AC_ZSH_SETUP_PATH;
+if [ "$osname" = "Darwin" ]
+then
+  SF_AC_ZSH_SETUP_PATH="$HOME/Library/Caches/sf/autocomplete/zsh_setup" && test -f $SF_AC_ZSH_SETUP_PATH && source $SF_AC_ZSH_SETUP_PATH;
+else
+  SF_AC_ZSH_SETUP_PATH="$HOME/.cache/sf/autocomplete/zsh_setup" && test -f $SF_AC_ZSH_SETUP_PATH && source $SF_AC_ZSH_SETUP_PATH;
+fi
+export APEX_LSP_PATH="$HOME/.local/bin"
 
