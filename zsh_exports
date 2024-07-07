@@ -34,3 +34,5 @@ else
 fi
 export APEX_LSP_PATH="$HOME/.local/bin"
 
+# Docker
+DOCKER_AC_ZSH_SETUP_PATH="$HOME/.docker/autocompletions/zsh_setup" && test -f $DOCKER_AC_ZSH_SETUP_PATH && source $DOCKER_AC_ZSH_SETUP_PATH;
